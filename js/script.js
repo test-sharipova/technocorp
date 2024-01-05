@@ -54,7 +54,7 @@ $('.cases__slider-for').slick({
 	slidesToScroll: 1,
 	arrows: false,
 	fade: true,
-	infinite: false,
+	infinite: true,
 	
 	asNavFor: '.cases__slider-nav'
   });
@@ -68,20 +68,24 @@ $('.cases__slider-for').slick({
 	focusOnSelect: true
   });
 
-//cases popup image
-$('.cases__slider-for').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    tLoading: 'Загрузка изображения #%curr%...',
-    gallery: {
-        enabled: true,
-        navigateByImgClick: true,
-        preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-    }
-    });
-	$('.open-gallery').click(function() {
-		$('.cases__slider-for').magnificPopup('open');
-	  });
+//галерея 
+	$('.cases__slider-for').each(function(i){
+		$(this).magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			tLoading: 'Загрузка изображения #%curr%...',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+			}
+			});
+	});
+	$('.open-gallery').each(function(i){
+		$(this).click(function() {
+			$('.cases__slider-for').eq(i).magnificPopup('open');
+		  });
+	});
 
 //запускать слайдер в табах
 $('.cases .tabs__caption li').each(function(i){
