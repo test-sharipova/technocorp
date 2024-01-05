@@ -170,11 +170,11 @@ myMap.geoObjects
 
 //modal
 $('.consult').on('click', function(){
-    $('.modal').fadeIn();
+    $('.modal').addClass('modal_active');
 
 });
 $('.modal__close').on('click', function(){
-    $('.modal').fadeOut();
+    $('.modal').removeClass('modal_active');
 });
 
 //маска для телефона

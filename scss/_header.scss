@@ -183,14 +183,14 @@ nav {
         z-index: 3;
         span {
             &:nth-child(1) {
-                transform: rotate(45deg) translateY(9px);
+                transform: rotate(45deg) translateY(11px);
                 background: #fff;
             }
             &:nth-child(2) {
                 display: none;
             }
             &:nth-child(3) {
-                transform: rotate(-45deg) translateY(-10px);
+                transform: rotate(-45deg) translateY(-11px);
                 background: #fff;
             }
         }
