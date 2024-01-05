@@ -50,6 +50,12 @@ body {
         background: transparent;
         color: #fff;
         border: 1px solid #fff;
+        transition: all .3s;
+        &:hover {
+            background-color: $yellow;
+            color: #000;
+            border-color: $yellow;
+        }
     }
     &_black {
         background: #000;
@@ -122,6 +128,9 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.flexWrap {
+    flex-wrap: wrap;
+}
 .mobile {
     display: none;
 }
@@ -143,4 +152,5 @@ body {
 @import '_numbers.scss';
 @import '_process.scss';
 @import '_rew.scss';
+@import '_team.scss';
 @import '_media.scss';

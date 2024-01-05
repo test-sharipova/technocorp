@@ -1,0 +1,39 @@
+.team {
+    .title {
+        margin-bottom: 48px;
+    }
+    &__item {
+        border-radius: 15px;
+        border: 1px solid #2C2C2C;
+        padding: 48px 32px 32px;
+        background-color: #000;
+        width: 33%;
+        max-width: 397px;
+        text-align: center;
+        transition: background-color .3s;
+        .btn {
+            width: 100%;
+            margin-top: 33px;
+            font-weight: 500;
+        }
+        .fs_24 {
+            margin-bottom: 16px;
+        }
+        &:hover {
+            background-color: #1D1D1D;
+        }
+    }
+    &__photo {
+        border-radius: 100%;
+        width: 166px;
+        height: 166px;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

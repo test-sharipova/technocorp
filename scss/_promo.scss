@@ -109,7 +109,7 @@
         &__img {
             border-radius: 15px;
             border: 1px solid #2C2C2C;
-
+            max-width: 610px;
             background: #1D1D1D;
             display: flex;
             justify-content: center;
@@ -137,6 +137,9 @@
                 background: url(../img/product/product-img-substract.png) no-repeat bottom left/400px 300px;
                 z-index: -1;
             }
+        }
+        .btn {
+            width: 291px;
         }
       }
 

@@ -14,6 +14,7 @@
         border-radius: 15px;
         opacity: 0.4;
         overflow: hidden;
+        transition: opacity .3s;
         &:hover {
             opacity: 1;
         }

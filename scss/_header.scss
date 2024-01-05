@@ -5,6 +5,12 @@ header {
     position: relative;
     z-index: 3;
 }
+.pt0 {
+    padding-top: 0;
+    .header__contacts__wrap_hide {
+        top: 78px;
+    }
+}
 .header {
     &__wrapper {
         max-width: 1609px;
