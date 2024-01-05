@@ -47,8 +47,13 @@ body {
         color: #000;
     }
     &_transparent {
+        background: transparent;
         color: #fff;
         border: 1px solid #fff;
+    }
+    &_black {
+        background: #000;
+        color: #fff;
     }
 }
 
@@ -75,6 +80,9 @@ body {
 }
 .fs_32 {
     font-size: 32px;
+}
+.fs_40 {
+    font-size: 40px;
 }
 
 .lh_norm {
@@ -131,4 +139,8 @@ body {
 @import '_map';
 @import '_footer.scss';
 @import '_modal.scss';
+@import '_product.scss';
+@import '_numbers.scss';
+@import '_process.scss';
+@import '_rew.scss';
 @import '_media.scss';

@@ -1,0 +1,59 @@
+.product {
+    padding-bottom: 80px;
+    .title {
+        margin-bottom: 32px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        border: 1px solid #2C2C2C;
+        padding: 24px 32px 34px;
+        background: #1D1D1D;
+        width: 32%;
+        max-width: 397px;
+        height: 478px;
+        &__img {
+            width: 100%;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                display: block;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+        .fs_16 {
+            margin-bottom: 24px;
+        }
+        .btn {
+            margin-bottom: 0;
+        }
+    }
+    &__subscribe {
+        margin-top: 32px;
+        border-radius: 15px;
+        border: 1px solid #2C2C2C;
+        padding: 60px 95px 60px 80px;
+        background: #DBFF00;
+        color: #000;
+        .fs_32 {
+            width: 55%;
+            max-width: 572px;
+        }
+        .btn {
+            padding: 19px 32px;
+            &::before {
+                content: '';
+                display: block;
+                background-color: $yellow;
+                width: 15px;
+                height: 13px;
+                margin-right: 11px;
+                mask: url(../img/icons/telegram.svg) no-repeat center/contain;
+            }
+        }
+    }
+}

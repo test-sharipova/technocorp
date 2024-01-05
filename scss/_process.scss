@@ -1,0 +1,44 @@
+.process {
+    padding-bottom: 80px;
+    .title {
+        max-width: 357px;
+    }
+    .wrapper {
+        align-items: flex-start;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 66%;
+    }
+    &__item {
+        border-radius: 15px;
+        border: 1px solid #2C2C2C;
+        padding: 24px 28px 32px;
+        background: #1D1D1D;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+        min-height: 204px;
+        
+    }
+    &__num {
+        border-radius: 10px;
+        border: 3px solid #DBFF00;
+        width: 68px;
+        height: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $yellow;
+
+        text-align: center;
+       
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}

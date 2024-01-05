@@ -19,6 +19,12 @@
         flex-direction: column;
         justify-content: space-between;
         max-width: 408px;
+        &-w511 {
+            max-width: 511px;
+            .fs_16 {
+                max-width: 398px;
+            }
+        }
     }
     &__form {
         width: 394px;
@@ -70,5 +76,7 @@
             border-color: $yellow;
         }
     }
-    
+    .fs_40 {
+        max-width: 511px;
+    }
 }
