@@ -1,0 +1,96 @@
+.serv {
+    padding-bottom: 80px;
+    margin-top: -32px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 48px;
+    }
+    &__item {
+        width: 400px;
+        height: 204px;
+        border-radius: 15px;
+        border: 1px solid #2C2C2C;
+        padding: 32px;
+        background: #1D1D1D;
+        transition: background-color .3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-decoration: none;
+        &:hover {
+            background-color: $yellow;
+            .serv__item__text {
+                color: #000;
+
+            }
+            .serv__item__img {
+                background-color: #000;
+                &::after {
+                    background-color: $yellow;
+                }
+            }
+        }
+        &__img {
+            transition: background-color .3s;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            mask-size: contain;
+            background-color: $yellow;
+            &1 {
+                mask-image: url(../img/serv-img1.svg);
+                width: 60px;
+                height: 64px;
+            }
+            &2 {
+                mask-image: url(../img/serv-img2.svg);
+                width: 58px;
+                height: 58px;
+            }
+            &3 {
+                mask-image: url(../img/serv-img3.svg);
+                width: 55px;
+                height: 55px;
+            }
+            &4 {
+                mask-image: url(../img/serv-img4.svg);
+                width: 64px;
+                height: 58px;
+            }
+            &5 {
+                mask-image: url(../img/serv-img5.svg);
+                width: 62px;
+                height: 62px;
+            }
+            &6 {
+                mask-image: url(../img/serv-img6.svg);
+                width: 73px;
+                height: 66px;
+                               
+            }
+            &7 {
+                mask-image: url(../img/serv-img7.svg);
+                width: 53px;
+                height: 54px;
+            }
+            &8 {
+                mask-image: url(../img/serv-img8.svg);
+                width: 63px;
+                height: 63px;
+            }
+        }
+        &__text {
+            color: #FFF;
+            transition: color .3s;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            max-width: 287px;
+            
+        }
+    }
+}

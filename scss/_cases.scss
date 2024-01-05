@@ -1,0 +1,166 @@
+.cases {
+  padding-bottom: 160px;
+  background-image: url(../img/cases/cases-bg1.png), url(../img/cases/cases-bg2.png);
+background-repeat: no-repeat, no-repeat;
+background-position: left bottom, right 45px bottom 131px;
+    .tabs__content {
+        display: none; /* по умолчанию прячем все блоки */
+      }
+      .tabs__content.active {
+        display: block; /* по умолчанию показываем нужный блок */
+      }
+      .tabs__caption {
+        list-style-type: none;
+        display: flex;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #575757;
+        gap: 40px;
+        li {
+          cursor: pointer;
+        }
+        li.active {
+          color: #fff;
+        }
+      }
+      &__slider {
+        &__wrap {
+          position: relative;
+          margin-top: 35px;
+        }
+        &__text {
+          color: $yellow;
+          max-width: 579px;
+          position: absolute;
+          top: 55px;
+          left: 50px;
+          z-index: 2;
+        }
+      }
+      &__slider-for {
+        width: 100%;
+        height: 688px;
+        .slick-list {
+          height: 100%;
+      }
+      .slick-track {
+          height: 100%;
+      }
+        .cases__slide {
+          &__img {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: 0 26%;
+              display: block;
+
+            }
+          }
+        }
+      }
+      &__slider-nav {
+        width: 366px;
+        height: 84px;
+        position: absolute;
+        bottom: 34px;
+        left: 50px;
+        .slick-slide {
+          width: 107px !important;
+          margin-right: 16px;
+        }
+        
+        .cases__slide {
+          width: 107px;
+          height: 84px;
+          &__img {
+            width: 107px;
+            height: 84px;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: outline .1s;
+            position: relative;
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              display: none;
+              background-color: #00000050;
+              
+            }
+            &:hover {
+              outline: 3px solid $yellow;
+              outline-offset: -3px;
+              &::before {
+                display: block;
+              }
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      .open-gallery {
+        border: none;
+        display: block;
+        background: url(../img/cases/case1.png) no-repeat center/cover;
+        width: 107px;
+        height: 84px;
+        border-radius: 8px;
+        position: absolute;
+        bottom: 34px;
+        left: 423px;
+        z-index: 2;
+        cursor: pointer;
+        &::before {
+          content: '+5 фото';
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: $yellow;
+          opacity: .77;
+          border-radius: 8px;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          
+        }
+        
+      }
+      &__img {
+        &__link {
+          display: block;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: linear-gradient(rgba(0, 0, 0, .7) 21%, transparent);
+          }
+        }
+      }
+}

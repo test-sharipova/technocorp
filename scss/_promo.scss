@@ -1,0 +1,105 @@
+.promo {
+    background-color: #000;
+    height: 100vh;
+    transform: translateY(-93px);
+    position: relative;
+    padding-top: 245px;
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        &__overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .40);
+        }
+    }
+    &__title {
+        color: #FFF;
+
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        max-width: 707px;
+        margin-bottom: 16px;
+        span {
+            color: $yellow;
+        }
+    }
+    &__subtitle {
+        color: #FFF;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        max-width: 502px;
+        margin-bottom: 48px;
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    &__cubs {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(50%);
+    }
+    .btn_yellow {
+        width: 290px;
+    }
+    .btn_white {
+        width: 181px;
+    }
+    .tabs {
+        &__caption {
+            position: absolute;
+            bottom: 46px;
+            display: flex;
+            z-index: 2;
+            list-style-type: none;
+            border-bottom: 3px solid rgba(255, 255, 255, .1);
+            li {
+                cursor: pointer;
+                padding-bottom: 24px;
+                transform: translateY(3px);
+                margin-right: 56px;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 190px;
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.active {
+                    border-bottom: 3px solid $yellow;
+                    color: $yellow;
+                }
+            }
+        }
+    }
+    .tabs__content {
+        display: none; 
+      }
+      .tabs__content.active {
+        display: block; 
+      }
+}

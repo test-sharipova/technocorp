@@ -1,0 +1,82 @@
+.questions {
+    padding-bottom: 108px;
+    &__img {
+        margin-bottom: 60px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .title {
+        margin-bottom: 21px;
+    }
+    &__quest {
+        margin-bottom: 48px;
+    }
+    details {
+        border-bottom: 3px solid #1D1D1D;
+        transition: all .3s;
+        .fs_16 {
+            padding-bottom: 24px;
+        }
+        &:hover {
+            border-bottom: 3px solid $yellow;
+            summary {
+                color: $yellow;
+                &::after {
+                    background-color: $yellow;
+                }
+            }
+        }
+        
+    }
+    
+    summary {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        height: 87px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: color .3s;
+        padding-right: 48px;
+        position: relative;
+        &::-webkit-details-marker {
+            display:none;
+          }
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 17px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #fff;
+            mask-image: url(../img/plus.svg);
+            mask-position: center;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            width: 27px;
+            height: 27px;
+        }
+    }
+    details[open] > summary {
+        &::after {
+            mask-image: url(../img/minus.svg);
+        }
+    }
+    .wrapper {
+        .fs_24 {
+            color: $text-color2;
+            span {
+                color: #fff;
+            }
+        }
+        .btn {
+            width: 32%;
+            max-width: 394px;
+        }
+    }
+}

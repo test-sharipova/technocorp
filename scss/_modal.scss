@@ -1,0 +1,82 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    mask-image: url(../img/modal-subtract.svg);
+    mask-position: center top;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    z-index: 10;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 28px 40px 0;
+        background-color: #000;
+    }
+    &__close {
+        cursor: pointer;
+        width: 29px;
+        height: 29px;
+        background: url(../img/icons/close.svg) no-repeat center/contain;
+    }
+    .wrapper {
+        align-items: stretch;
+    }
+    &__container {
+        width: 85%;
+        max-width: 1170px;
+        margin: 83px auto 0;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 374px;
+        .fs_24 {
+            color: #666;
+            line-height: 133%;
+            span {
+                color: #fff;
+            }
+        }
+    }
+    &__form {
+        display: grid;
+        grid-template-columns: 291px 291px;
+        gap: 36px;
+        textarea {
+            grid-column: 1/3;
+            border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+            &::placeholder {
+                color: rgba(255, 255, 255, .4)
+            }
+            &:focus {
+                &::placeholder {
+                    color: $yellow;
+                }
+                border-color: #fff;
+            }
+        }
+        .form__input {
+            border-bottom: 1px solid rgba(255, 255, 255, .2);
+            &::placeholder {
+                color: rgba(255, 255, 255, .4);
+            }
+            font-weight: 400;
+            &:focus {
+                &::placeholder {
+                    color: $yellow;
+                }
+                border-color: #fff;
+            }
+        }
+    }
+    .policy {
+        color: #666;
+    }
+}

@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import '_vari.scss';
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1240px;
+}
+.btn {
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 32px 0 33px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    &_41 {
+        height: 41px;
+        color: #333;
+    }
+    &_44 {
+        height: 44px;
+        
+    }
+    &_60 {
+        height: 60px;
+    }
+    &_yellow {
+        background-color: $yellow;
+    }
+    &_white {
+        background-color: #fff;
+        color: #000;
+    }
+    &_transparent {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}
+
+//font
+.title {
+    font-size: 48px;
+    font-weight: 600;
+    span {
+        color: $yellow;
+    }
+}
+.fs_13 {
+    font-size: 13px;
+}
+.fs_18 {
+    font-size: 18px;
+}
+.fs_24 {
+    font-size: 24px;
+}
+.fs_32 {
+    font-size: 32px;
+}
+
+.lh_norm {
+    line-height: normal;
+}
+.lh_150 {
+    line-height: 150%;
+}
+
+.fw_600 {
+    font-weight: 600;
+}
+.fw_500 {
+    font-weight: 500;
+}
+
+//margins
+.mb_16 {
+    margin-bottom: 16px;
+}
+.mb_24 {
+    margin-bottom: 24px;
+}
+.mb_48 {
+    margin-bottom: 48px;
+}
+.mb_58 {
+    margin-bottom: 58px;
+}
+.mb_60 {
+    margin-bottom: 60px;
+}
+
+//wrappers
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile {
+    display: none;
+}
+
+@import '_header.scss';
+@import '_promo.scss';
+@import '_serv.scss';
+@import '_wins.scss';
+@import '_exp.scss';
+@import '_form.scss';
+@import '_provid.scss';
+@import '_quest';
+@import '_cases.scss';
+@import '_cont';
+@import '_map';
+@import '_footer.scss';
+@import '_modal.scss';
+@import '_media.scss';

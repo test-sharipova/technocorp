@@ -1,0 +1,91 @@
+.exp {
+    padding-bottom: 215px;
+   
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        background: url(../img/exp-back.png) no-repeat 30% / 457px 422px;
+        .title {
+            max-width: 352px;
+        }
+    }
+    &__item {
+        margin-bottom: 58px;
+       
+        .fs_32 {
+            position: relative;
+            transition: color .3s;
+            &::before {
+                content: '';
+                display: block;
+                mask-position: center;
+                mask-repeat: no-repeat;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: background-color .3s;
+            }
+        }
+        &:nth-child(1) {
+            .fs_32 {
+                &::before {
+                    width: 23px;
+                    height: 28px;
+                    mask-image: url(../img/exp-item1.svg);
+                    left: -46px;
+                }
+            }
+        }
+        &:nth-child(2) {
+            .fs_32 {
+                &::before {
+                    width: 35px;
+                    height: 22px;
+                    mask-image: url(../img/exp-item2.svg);
+                    left: -52px;
+                }
+            }
+        }
+        &:nth-child(3) {
+            margin-bottom: 0;
+            .fs_32 {
+                &::before {
+                    width: 29px;
+                    height: 35px;
+                    mask-image: url(../img/exp-item3.svg);
+                    left: -49px;
+                }
+            }
+        }
+        &:hover {
+            .fs_32 {
+                color: $yellow;
+                &::before {
+                    background-color: $yellow;
+                }
+            }
+        }
+    }
+    &__text {
+        max-width: 505px;
+        color: $text-color2;
+        line-height: 150%;
+        span {
+            color: #fff;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__content2 {
+        border-radius: 15px;
+        border: 1px solid #2C2C2C;
+        width: 49%;
+
+        background: #1D1D1D;
+        padding: 59px 65px 70px 92px;
+    }
+}

@@ -1,0 +1,268 @@
+header {
+    background-color: transparent;
+    height: 93px;
+    padding-top: 49px;
+    position: relative;
+    z-index: 3;
+}
+.header {
+    &__wrapper {
+        max-width: 1609px;
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-left: auto;
+        &__wrap {
+            position: relative;
+            &_hide {
+                display: none;
+                position: absolute;
+                top: 98px;
+                background-color: #fff;
+                border-radius: 8px;
+                padding: 6px;
+                .header__phone {
+                    color: #000;
+                    background-color: transparent;
+                    transition: background-color .3s;
+                    &::after {
+                        display: none;
+                    }
+                    &:hover {
+                        background-color: #EDFF80;
+                    }
+                }
+                &_active {
+                    display: block;
+                }
+            }
+        }
+        .btn_41 {
+            color: #333;
+            font-size: 15px;
+        }
+        &__icon {
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            mask-image: url(../img/icons/phone.svg);
+            mask-border-repeat: no-repeat;
+            mask-size: contain;
+            mask-position: center;
+            margin-right: 34px;
+            &_active {
+                background-color: $yellow;
+            }
+        }
+        &_mobile {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, .95);
+            display: none;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            z-index: 2;
+            &_active {
+                display: flex;
+                padding-bottom: 36px;
+            }
+            .header__phone {
+                color: #000;
+                width: fit-content;
+                &:first-child {
+                    background-color: $yellow;
+                    margin-bottom: 7px;
+                }
+                &:nth-child(2) {
+                    background-color: #ffffff20;
+                    color: #fff;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__phone {
+        height: 41px;
+        display: block;
+        padding: 12px 51px 11px 20px;
+        line-height: normal;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        background: rgba(217, 217, 217, .1);
+        position: relative;
+        &::after {
+            content: '';
+            width: 18px;
+            height: 11px;
+            background: url(../img/icons/yellow-arrow-down.svg) no-repeat center/ contain;
+            display: block;
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+.logo {
+    width: 204px;
+    height: 44px;
+    display: block;
+    margin-right: 110px;
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+nav {
+    height: 100%;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    column-gap: 40px;
+    height: 100%;
+    .item {
+        height: 100%;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: normal;
+        color: #fff;
+        opacity: .7;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: opacity .3s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+.hamburger {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 22px;
+    height: 18px;
+    position: absolute;
+    z-index: 2;
+    top: 21px;
+    right: 16px;
+    cursor: pointer;
+    span {
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        display: block;
+    }
+    &_active {
+        top: 20px;
+        z-index: 3;
+        span {
+            &:nth-child(1) {
+                transform: rotate(45deg) translateY(9px);
+                background: #fff;
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg) translateY(-10px);
+                background: #fff;
+            }
+        }
+    }
+}
+//dropdown menu
+ //сужение меню при изменении ширины экрана
+//  .top_menu {
+//     width: 81%;
+//     .menu {
+//         width: 100%;
+//         position: relative;
+//         padding-right: 36px;
+//         z-index: 3;
+//     }
+// }
+// ul.menu {padding:0; margin:0;}
+// ul.menu li {
+//     list-style-type:none; 
+//     display:flex;
+//     align-items: flex-end; 
+//     float:left; 
+//     padding: 0; 
+//     white-space:nowrap;
+//     &:first-child {
+//         a {
+//             margin-left: 0;
+//         }
+//     }
+// }
+// .dropdown-toggle {
+//     cursor: pointer;
+//     width: 26px;
+//     height: 23px;
+//     background: #fff;
+    
+//     border-radius: 8px;
+    
+//     display: flex;
+   
+//     justify-content: center;
+   
+//     align-items: center;
+    
+   
+// }
+// ul.menu li.dd_menu {
+//     float:right; 
+//     position:absolute; 
+//     display:none;
+//     right: 0;
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
+// ul.menu ul.dropdown-menu {
+//     display:none; 
+//     position:absolute; 
+//     top:35px; 
+//     right:10px; 
+//     padding:5px; 
+//     border:#CCC 1px solid; 
+//     border-radius:5px; 
+//     z-index:2;
+//     background: #fff;
+// }
+// ul.menu ul.dropdown-menu li {
+//     &:first-child {
+//         a {
+//             margin: 0 10px;
+//         }
+//     }
+//     float:none;
+//     margin-bottom: 12px;
+// }
+// ul.menu a {color: #fff; text-decoration: none; display:inline-block; margin:0 10px;}
