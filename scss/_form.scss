@@ -1,8 +1,11 @@
 .form {
     padding-bottom: 120px;
+    &_pb86 {
+        padding-bottom: 86px;
+    }
     .title {
         max-width: 408px;
-        margin-bottom: 50px;
+        
     }
     &__wrapper {
         display: flex;
@@ -13,6 +16,9 @@
 
         background: #1D1D1D;
         padding: 75px 153px 96px 85px;
+        &_pt84 {
+            padding-top: 84px;
+        }
     }
     &__content {
         display: flex;

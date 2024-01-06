@@ -1,9 +1,10 @@
+.pt104 {
+    padding-top: 104px;
+}
 footer {
     padding-top: 120px;
     padding-bottom: 48px;
-    .title {
-        margin-bottom: 50px;
-    }
+    
     .form__wrapper {
         background-color: transparent;
         border: none;
@@ -15,8 +16,8 @@ footer {
 }
 .footer {
     &__wrapper {
-        width: 95%;
-        max-width: 1000px;
+        width: 86%;
+        max-width: 1066px;
         margin: 0 auto;
         .wrapper {
             max-width: 940px;

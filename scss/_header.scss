@@ -51,6 +51,14 @@ header {
                 }
             }
         }
+        &_mob {
+            .header__contacts__wrap_hide {
+                top: 39px;
+            }
+            .header__phone__wrap {
+                position: relative;
+            }
+        }
         .btn_41 {
             color: #333;
             font-size: 15px;

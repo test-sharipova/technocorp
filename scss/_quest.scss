@@ -1,5 +1,8 @@
 .questions {
     padding-bottom: 108px;
+    &_pb60 {
+        padding-bottom: 65px;
+    }
     &__img {
         margin-bottom: 60px;
         img {
@@ -11,7 +14,7 @@
         margin-bottom: 21px;
     }
     &__quest {
-        margin-bottom: 48px;
+        margin-bottom: 42px;
     }
     details {
         border-bottom: 3px solid #1D1D1D;
