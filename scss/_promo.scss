@@ -98,6 +98,19 @@
                 }
             }
         }
+        
+    }
+    &__arrow {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border: none;
+        background: url(../img/promo_arrow.svg) no-repeat center/contain;
+        cursor: pointer;
+        text-decoration: none;
+        position: absolute;
+        right: 9.5%;
+        bottom: 5%;
     }
     .tabs__content {
         display: none; 

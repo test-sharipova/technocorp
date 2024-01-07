@@ -98,6 +98,43 @@ $('.cases .tabs__caption li').each(function(i){
 });
 
 //карта
+// initMap();
+
+// async function initMap() {
+//     // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
+//     await ymaps3.ready;
+
+//     const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+
+//     // Иницилиазируем карту
+//     const map = new YMap(
+//         // Передаём ссылку на HTMLElement контейнера
+//         document.getElementById('map'),
+
+//         // Передаём параметры инициализации карты
+//         {
+//             location: {
+//                 // Координаты центра карты
+//                 center: [23.131094, 113.258989],
+
+//                 // Уровень масштабирования
+//                 zoom: 9
+//             }
+//         },
+
+
+//     );
+
+// 	
+
+//     // Добавляем слой для отображения схематической карты
+    
+// 	map.addChild(new YMapDefaultSchemeLayer({
+// 		theme: "dark", customization: 
+// 	}));
+// }
+
+ 
 ymaps.ready(function () {
 	var myMap = new ymaps.Map('map', {
 		center: [23.131094, 113.258989],
@@ -131,12 +168,15 @@ ymaps.ready(function () {
 		e.get('target').options.unset('preset');
 	});
 	
+	
+	
 
 myMap.geoObjects
 	.add(myPlacemark);
 	
   });
-
+  
+//Челябинск
   ymaps.ready(function () {
 	var myMap = new ymaps.Map('map2', {
 		center: [55.159902, 61.402554],
@@ -163,7 +203,7 @@ myMap.geoObjects
 	
 	
 
-myMap.geoObjects
+	myMap.geoObjects
 	.add(myPlacemark2);
 	
   });

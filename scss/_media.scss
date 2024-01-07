@@ -401,6 +401,24 @@ nav {
         font-size: 12px;
     }
 }
+.map {
+    &__adress {
+        width: 100%;
+        right: 50%;
+        transform: translateX(50%);
+        max-width: 343px;
+        padding: 16px;
+        min-height: 135px;
+        height: auto;
+        bottom: 20px;
+    &__img {
+        display: none;
+    }
+    &__mark {
+        display: none;
+    }
+    }
+}
 .contacts {
     padding-top: 40px;
     padding-bottom: 6px;
@@ -532,6 +550,9 @@ footer {
             justify-content: center;
             row-gap: 20px;
         }
+        &__text {
+            max-width: 323px;
+        }
     }
     .questions {
         padding-bottom: 60px;
@@ -650,18 +671,30 @@ footer {
         .title {
             margin-bottom: 24px;
         }
+        &__img {
+            opacity: 1;
+        }
     }
     .team {
         .wrapper {
             overflow-y: hidden;
             overflow-x: scroll;
             scroll-snap-type: x mandatory;
+            gap: 24px;
         }
         &__item {
             width: 295px;
             min-width: 295px;
             scroll-snap-align: start;
             left: 0;
+            background: #1D1D1D;
+            
+            .btn {
+                background-color: $yellow;
+                color: #000;
+                border-color: $yellow;
+                font-size: 16px;
+            }
         }
     }
     .pt104 {
