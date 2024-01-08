@@ -4,6 +4,7 @@
     transform: translateY(-93px);
     position: relative;
     padding-top: 245px;
+    
     &__video {
         position: absolute;
         top: 0;
@@ -71,6 +72,7 @@
         width: 181px;
     }
     .tabs {
+        
         &__caption {
             position: absolute;
             bottom: 46px;
@@ -99,6 +101,45 @@
             }
         }
         
+    }
+    &__slider {
+        display: none;
+        height: calc(100vh - 60px);
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .slick-dots {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            width: 128px;
+            position: absolute;
+            bottom: 24px;
+            li {
+                button {
+                    font-size: 1px;
+                    color: transparent;
+                    border: none;
+                    background-color: #fff;
+                    width: 40px;
+                    height: 3px;
+                    
+                }
+                &.slick-active {
+                    button {
+                        background-color: $yellow;
+                    }
+                }
+            }
+           
+        }
+    }
+    &__slide {
+        padding-top: 110px;
+        height: calc(100vh - 60px);
+        position: relative;
     }
     &__arrow {
         display: block;

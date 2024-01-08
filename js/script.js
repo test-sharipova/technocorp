@@ -43,6 +43,12 @@ $(document).on('click', function(event) {
 		.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 	});
 
+//promo slider
+$('.promo__slider').slick({
+	arrows: false,
+	dots: true
+});
+
 //wins slider
 $('.wins__slider').each(function(){
 	$(this).slick();

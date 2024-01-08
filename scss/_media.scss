@@ -143,30 +143,28 @@ nav {
     }
 }
 .promo {
-    padding-top: 170px;
-    
-    .tabs__caption {
-        border: none;
-        li {
-            color: transparent;
-            font-size: 1px;
-            width: 40px;
-            margin-right: 4px;
-            border-bottom: 3px solid #fff;
-            &.active {
-                color: transparent;
-            }
-        }
-        
-    }
+    padding-top: 0px;
+    transform: translateY(0);
+    height: calc(100vh - 60px);
+   .tabs {
+    display: none;
+   }
     &__title {
         font-size: 32px;
     }
     &__cubs {
         display: none;
     }
+    &__arrow {
+        width: 40px;
+        height: 40px;
+    }
+    &__slider {
+        display: block;
+    }
 }
 .serv {
+    margin-top: 60px;
     &__item {
         flex-direction: row;
         justify-content: flex-start;
