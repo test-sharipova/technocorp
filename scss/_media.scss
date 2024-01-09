@@ -17,6 +17,14 @@
             }
         }
     }
+    .serv {
+        &__item {
+            width: 32%;
+        }
+        &__wrapper {
+            gap: 18px;
+        }
+    }
 }
 @media screen and (max-width:1023px){
     .product {
@@ -41,6 +49,12 @@
     }
     .pt0 {
         padding-top: 14px;
+    }
+    .serv {
+        &__item {
+            width: 45%;
+        }
+       
     }
 }
 @media screen and (max-width:768px){
@@ -110,7 +124,7 @@
 }
 header {
     background-color: #1D1D1D;
-    padding: 14px 16px;
+    padding: 14px 8px;
     height: 60px;
 }
 nav {
@@ -145,12 +159,20 @@ nav {
 .promo {
     padding-top: 0px;
     transform: translateY(0);
-    height: calc(100vh - 60px);
+    height: 742px;
    .tabs {
     display: none;
    }
+   .container {
+    padding-left: 32px;
+   }
     &__title {
         font-size: 32px;
+        
+        margin-bottom: 24px;
+    }
+    &__subtitle {
+        margin-bottom: 34px;
     }
     &__cubs {
         display: none;
@@ -158,13 +180,22 @@ nav {
     &__arrow {
         width: 40px;
         height: 40px;
+        right: 8.5%;
+        bottom: 3.5%;
     }
     &__slider {
         display: block;
     }
+   
+    .btn {
+        height: 54px;
+        max-width: 311px;
+        width: 100%;
+        font-size: 16px;
+    }
 }
 .serv {
-    margin-top: 60px;
+    margin-top: 56px;
     &__item {
         flex-direction: row;
         justify-content: flex-start;
@@ -175,7 +206,7 @@ nav {
         padding: 24px;
         &__text {
             font-size: 16px;
-            margin-left: 24px;
+            margin-left: 32px;
         }
         &__img {
             &1 {
@@ -220,7 +251,7 @@ nav {
     }
 }
 .wins {
-    padding-bottom: 60px;
+    padding-bottom: 58px;
     .wrapper {
         flex-wrap: wrap;
         gap: 10px;
@@ -254,11 +285,12 @@ nav {
     }
     &__content2 {
         width: 100%;
-        padding: 24px 67px 32px 24px;
+        padding: 24px 58px 32px 24px;
     }
     &__text {
         font-size: 18px;
         margin-top: 20px;
+        line-height: 24px;
     }
    &__item {
     margin-bottom: 32px;
@@ -280,6 +312,7 @@ nav {
     }
     .fs_16 {
         font-size: 14px;
+        line-height: 24px;
     }
    }
 }
@@ -303,6 +336,10 @@ nav {
     &__content {
         max-width: 100%;
     }
+    .btn {
+        height: 54px;
+        font-size: 16px;
+    }
 }
 .provid {
     padding-bottom: 60px;
@@ -311,11 +348,13 @@ nav {
     }
     .title {
         margin-bottom: 20px;
+        max-width: 90%;
     }
     &__text {
         font-size: 18px;
-        padding-left: 10px;
+        line-height: 24px;
         margin-bottom: 32px;
+        max-width: 90%;
     }
     &__popular {
         width: 100%;
@@ -323,7 +362,8 @@ nav {
             background-position: top 47px right 0;
             background-size: 198px;
             &:nth-child(1) {
-                padding-bottom: 32px;
+                padding-bottom: 29px;
+                margin-bottom: 16px;
             }
             padding: 169px 51px 32px 32px;
         }
@@ -535,6 +575,8 @@ footer {
         padding-bottom: 60px;
         &__wrapper {
             justify-content: center;
+            gap: 16px;
+            margin-top: 24px;
         }
         &__item {
             width: 343px;
@@ -550,6 +592,16 @@ footer {
         }
         &__text {
             max-width: 323px;
+        }
+        &__text {
+            padding: 18px 13px;
+            br {
+                display: none;
+            }
+            .fs_32 {
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
         }
     }
     .questions {

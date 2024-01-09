@@ -104,7 +104,10 @@
     }
     &__slider {
         display: none;
-        height: calc(100vh - 60px);
+        height: 100%;
+        .slick-track, .slick-list {
+            height: 100%;
+        }
         &__img {
             position: absolute;
             top: 0;
@@ -117,6 +120,7 @@
             width: 128px;
             position: absolute;
             bottom: 24px;
+            left: 32px;
             li {
                 button {
                     font-size: 1px;
@@ -138,7 +142,7 @@
     }
     &__slide {
         padding-top: 110px;
-        height: calc(100vh - 60px);
+        height: 100%;
         position: relative;
     }
     &__arrow {
