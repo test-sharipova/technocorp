@@ -191,6 +191,15 @@ nav {
    .tabs {
     display: none;
    }
+   &__video {
+    img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+   
+}
    .container {
     padding-left: 32px;
    }
@@ -219,7 +228,7 @@ nav {
    }
     .btn {
         height: 54px;
-        max-width: 311px;
+        max-width: 420px;
         width: 100%;
         font-size: 16px;
     }
@@ -444,7 +453,7 @@ nav {
             }
         }
         &-for {
-            height: 190px;
+            height: 300px;
         }
         &__text {
             left: 0;
@@ -622,21 +631,7 @@ footer {
         width: 100%;
         padding: 0 16px;
     }
-    .promo {
-        &__video {
-            img {
-                display: block;
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-            }
-            &__video {
-                video {
-                    display: none;
-                }
-            }
-        }
-    }
+    
     .serv {
         padding-bottom: 60px;
         &__wrapper {
@@ -645,7 +640,7 @@ footer {
             margin-top: 24px;
         }
         &__item {
-            width: 343px;
+            width:100%;
         }
     }
     .wins {
@@ -653,7 +648,7 @@ footer {
             margin-bottom: 46px;
         }
         .wrapper {
-            justify-content: center;
+            
             row-gap: 20px;
         }
         &__text {
@@ -669,6 +664,10 @@ footer {
                 margin-bottom: 12px;
             }
         }
+        &__slider {
+            width: 100%;
+            max-width: 600px;
+        }
     }
     .questions {
         padding-bottom: 60px;
@@ -683,15 +682,18 @@ footer {
             }
             .btn {
                 width: 100%;
-                max-width: 375px;
+                max-width: 420px;
             }
-            justify-content: center;
+            
         }
     }
     .cases {
         &__slider {
             &__wrap {
                 margin-top: 32px;
+            }
+            &-for {
+                height: 190px;
             }
         }
     }

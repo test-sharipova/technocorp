@@ -66,14 +66,12 @@ header {
         &__icon {
             width: 20px;
             height: 20px;
-            background-color: #fff;
-            mask-image: url(../img/icons/phone.svg);
-            mask-border-repeat: no-repeat;
-            mask-size: contain;
-            mask-position: center;
-            margin-right: 44px;
+            background: url(../img/icons/phone.svg) no-repeat center/contain;
+
+           
+            margin-right: 48px;
             &_active {
-                background-color: $yellow;
+                background-image: url(../img/icons/phone-active.svg);
             }
         }
         &_mobile {
