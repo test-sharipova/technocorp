@@ -42,28 +42,33 @@
 <body>
     <header class="pt0">
         <div class="header__wrapper">
-            <a href="index.html" class="logo">
+            <a href="#" class="logo">
                 <img src="img/logo.svg" alt="Логотип">
             </a>
-           <nav>
+           <div class="top_menu">
                 <ul class="menu">
-                    <li class="menu__item">
-                        <a href="index.html" class="menu__link">Главная</a>
+                   
+                    <li class="item">
+                        <a href="#" class="menu__link">Главная</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="item">
                         <a href="#serv" class="menu__link">Услуги</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="item">
                         <a href="#wins" class="menu__link">Сильные стороны</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="item">
                         <a href="#cases" class="menu__link">Кейсы</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="item">
                         <a href="#quest" class="menu__link">Частые вопросы</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="item">
                         <a href="#cont" class="menu__link">Контакты</a>
+                    </li>
+                    <li class="dd_menu">
+                        <button class="dropdown-toggle" type="button"></button>
+                        <ul class="dropdown-menu"></ul>
                     </li>
                    <li class="mobile">
                     <div class="header__contacts header__contacts_mob">
@@ -88,7 +93,7 @@
                    </li>
                 </ul>
                 
-           </nav>
+           </div>
            <div class="hamburger">
             <span></span>
             <span></span>
@@ -170,7 +175,7 @@
             </div>
             <div class="product__subscribe">
                 <div class="wrapper">
-                    <p class="fs_32 fw_600 lh_norm">Подпишись на наш телеграм канал 
+                    <p class="fs_32 fw_600 lh_norm">Подпишись на наш телеграм канал <br class="mobile"> 
                         и получи актуальный прайс-лист</p>
                         <a href="#" class="btn btn_black fs_18 fw_500">Подписаться <span class="desktop">на телеграм канал</span></a>
                 </div>
@@ -908,8 +913,9 @@
             <div class="footer__wrapper">
                 <div class="form__wrapper">
                     <div class="form__content form__content-w511">
+                        <!-- замена текста -->
                         <p class="title fs_40 mb_24">
-                            Нужна поставка майнинг-оборудования?
+                            Хотите работать с нами?
                         </p>
                         <p class="fs_16 lh_150">
                             Наш специалист свяжется с вами через 30 минут и ответит на все вопросы
