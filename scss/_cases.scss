@@ -23,6 +23,10 @@
         gap: 40px;
         li {
           cursor: pointer;
+          transition: color .3s;
+          &:hover {
+            color: $yellow;
+          }
         }
         li.active {
           color: #fff;

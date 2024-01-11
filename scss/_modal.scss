@@ -26,7 +26,7 @@
         display: flex;
         justify-content: space-between;
         padding: 28px 40px 0;
-        background-color: #000;
+        background-color: #1D1D1D;
     }
     &__close {
         cursor: pointer;
@@ -40,7 +40,7 @@
     &__container {
         width: 100%;
         
-        background-color: #000;
+        background-color: #1D1D1D;
     }
     .wrapper {
         width: 85%;
@@ -97,11 +97,12 @@
         color: #666;
     }
     &__back {
-        mask-image: url(../img/modal-subtract.svg);
-        mask-position: bottom;
-        mask-repeat: no-repeat;
-        mask-size: cover;
+        // mask-image: url(../img/modal-subtract.svg);
+        // mask-position: bottom;
+        // mask-repeat: no-repeat;
+        // mask-size: cover;
+
         flex-grow: 1;
-        background-color: #000;
+        background: #000 url(../img/modal-subtract.png) no-repeat bottom/cover;
     }
 }

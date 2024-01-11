@@ -12,6 +12,9 @@ body {
     background-color: #000;
     color: #fff;
 }
+.overflow {
+    overflow: hidden;
+}
 .container {
     margin: 0 auto;
     width: 90%;
@@ -28,6 +31,7 @@ body {
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
+    transition: background-color .3s;
     &_41 {
         height: 41px;
         color: #333;
@@ -42,11 +46,21 @@ body {
     &_yellow {
         background-color: $yellow;
         color: #000;
+        &:hover {
+            background-color: #D8FF68;
+        }
     }
     &_white {
         background-color: #fff;
         color: #000;
+        
+        &:hover {
+            background-color: #000;
+            border: 1px solid #fff;
+            color: #fff;
+        }
     }
+    
     &_transparent {
         background: transparent;
         color: #fff;

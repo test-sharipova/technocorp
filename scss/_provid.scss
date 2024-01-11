@@ -63,6 +63,10 @@
             }
             .btn {
                 max-width: 153px;
+                &:hover {
+                    background: #000;
+                    color: #fff;
+                }
             }
         }
     }

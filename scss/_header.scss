@@ -64,14 +64,18 @@ header {
             font-size: 15px;
         }
         &__icon {
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 24px;
             background: url(../img/icons/phone.svg) no-repeat center/contain;
 
            
             margin-right: 48px;
             &_active {
-                background-image: url(../img/icons/phone-active.svg);
+                background: #1D1D1D url(../img/icons/close.svg) no-repeat center/20px;
+                margin-right: -3px;
+                z-index: 3;
+                position: relative;
+                
             }
         }
         &_mobile {
@@ -121,6 +125,10 @@ header {
         border-radius: 8px;
         background: rgba(217, 217, 217, .1);
         position: relative;
+        transition: background-color .3s;
+        &:hover {
+            background-color: rgb(85%, 85%, 85%, .3);
+        }
         &::after {
             content: '';
             width: 18px;

@@ -1,19 +1,27 @@
 //меню
 const menu = document.querySelector('.menu'),
 menuItem = document.querySelectorAll('.item'),
+body = document.querySelector('body'),
 hamburger = document.querySelector('.hamburger');
 
 hamburger.addEventListener('click', () => {
 	hamburger.classList.toggle('hamburger_active');
 	menu.classList.toggle('menu_active');
+	body.classList.toggle('overflow');
+	  
 });
 
 menuItem.forEach(item => {
 	item.addEventListener('click', () => {
 		hamburger.classList.toggle('hamburger_active');
 		menu.classList.toggle('menu_active');
+		
 	});
 });
+
+
+
+
 //скрываются пункты меню при сужении экрана
 function responseMenu(){
 	if (window.innerWidth < 768) return; 

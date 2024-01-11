@@ -98,6 +98,10 @@
                     border-bottom: 3px solid $yellow;
                     color: $yellow;
                 }
+                transition: color .3s;
+                &:hover {
+                    color: $yellow;
+                }
             }
         }
         
